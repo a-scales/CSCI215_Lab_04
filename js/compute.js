@@ -14,12 +14,13 @@ function convert() {
 	var exchangeRate = selectElement.value;
 	var index = selectElement.selectedIndex;
 	var currency = selectElement.options[index].text;
+	updateExchange(dollar,exchangeRate,currency,index);
 }
 
 // -----------------------------------
 // Calculate Function Goes Here
 function calculate(dollar, exchangeRate) {
-	return dollar*exchangeRate;
+	return (dollar*exchangeRate);
 }
 
 // -----------------------------------
